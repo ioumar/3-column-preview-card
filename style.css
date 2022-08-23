@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body
+{
+	width: 60%;
+	margin: 50px auto;
+	background: hsl(0, 0%, 95%);
+}
+
+/*---------------------------------------------main----------------------------------------------------*/
+.column-card
+{
+	display: grid;
+	grid-template-columns: 280px 280px 280px;
+}
+
+.column
+{
+	padding: 30px;
+}
+
+.column span
+{
+	display: block;
+	margin-bottom: 30px;
+}
+
+.column h1
+{
+	font-family: 'Big Shoulders Display', sans-serif, serif;
+	font-size: 1.9em;
+	color: hsl(0, 0%, 95%);
+	text-transform: uppercase;
+	margin-bottom: 30px;
+}
+
+.column p 
+{
+	font-family: 'Lexend Deca', sans-serif, serif;
+	font-size: 0.9em;
+	color: hsla(0, 0%, 100%, 0.75);
+	width: 90%;
+	line-height: 25px;
+	margin-bottom: 80px;
+}
+
+.column button 
+{
+	font-family: 'Lexend Deca', sans-serif, serif;
+	padding: 12px;
+	border-radius: 25px;
+	width: 60%;
+	background: hsl(0, 0%, 95%);
+	margin-bottom: 30px;
+	border: none;
+	transition: 0.3s;
+}
+
+.column button:hover
+{
+	cursor: pointer;
+	background: skyblue;
+}
+
+#sedans-card
+{
+	background: hsl(31, 77%, 52%);
+	border-top-left-radius: 15px;
+	border-bottom-left-radius: 15px;
+}
+
+
+#suvs-card
+{
+	background: hsl(184, 100%, 22%);
+}
+
+#luxury-card
+{
+	background: hsl(179, 100%, 13%);
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+}
+
+#btn-sedans
+{
+	color: hsl(31, 77%, 52%);
+}
+
+#btn-suvs
+{
+	color: hsl(184, 100%, 22%);
+}
+
+#btn-luxury
+{
+	color: hsl(179, 100%, 13%);
+}
+
+/*--------------------------------------------Responsive Design------------------------------------------*/
+
+@media screen and (max-width: 1070px)
+{
+	body
+	{
+		width: 80%;
+	}
+}
+
+@media screen and (max-width: 940px)
+{
+	.column-card
+	{
+		grid-template-columns: 285px;
+		margin-bottom: 50px;
+
+	}
+
+	#sedans-card
+	{
+		border-top-left-radius: 15px;
+		border-top-right-radius: 15px;
+		border-bottom-left-radius: 0;
+	}
+
+	#luxury-card
+	{
+		border-top-right-radius: 0;
+		border-bottom-left-radius: 15px;
+		border-bottom-right-radius: 15px;
+	}
+}
